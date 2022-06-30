@@ -1,0 +1,26 @@
+<div class="iniciodesesion"> 
+
+    <h2>Inicio de sesión</h2>
+
+
+    <form class="sesion"  action="login" method="POST">
+
+       <input type="email" name="email" placeholder="email"><br>
+       <input type="password" name="password" placeholder="password"><br>
+
+
+    {{#if message}}
+
+        <div class="alert" role="alert">
+
+            {{message}}
+
+        </div>
+
+    {{/if}} 
+
+       <button type="submit">submit</button>
+
+    </form>
+
+</div>
